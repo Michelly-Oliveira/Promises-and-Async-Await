@@ -12,7 +12,9 @@ function fetchUsersAvatars() {
         .then(response => response.json())
         // Here we get the actual data that we can work with
         .then(users => {
+            // Loop through the users array
             container.innerHTML = users.map(user => {
+                // For each user create an image html element with the avatar url as the source
                 return `
                     <img src="${user.avatar_url}" style="width:100px; height=100px"></img>
                 `;
