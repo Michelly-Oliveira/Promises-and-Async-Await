@@ -2,6 +2,7 @@
 
 ### Promises
 - Promise is an object that can be in one of these states: 
+
 -> **fulfilled**: successfully got data;
 -> **rejected**: failed to get data;
 -> **pending**: waiting for answer
